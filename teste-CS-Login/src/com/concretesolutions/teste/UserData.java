@@ -4,7 +4,7 @@ import java.io.Serializable;
 import javax.xml.bind.annotation.XmlRootElement;
 
 @XmlRootElement
-public class UserIdentification implements Serializable{
+public class UserData implements Serializable{
 
     private static final long serialVersionUID = 6826191735682596960L;
 
@@ -13,9 +13,9 @@ public class UserIdentification implements Serializable{
     private String password;
     private PhoneNumber[] phones;
     
-    public UserIdentification () {}
+    public UserData() {}
     
-    public UserIdentification( String name, String email, String password, Object[] phones) {
+    public UserData( String name, String email, String password, Object[] phones) {
         this.name = name;
         this.setEmail(email);
         this.setPassword(password);

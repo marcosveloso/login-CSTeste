@@ -3,7 +3,7 @@ package com.concretesolutions.teste;
 import javax.ws.rs.ApplicationPath;
 import org.glassfish.jersey.server.ResourceConfig;
 
-@ApplicationPath("loginservice")
+@ApplicationPath("/")
 public class Login extends ResourceConfig {
 
     public Login() {
